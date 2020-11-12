@@ -27,3 +27,17 @@ for x in range(1, len(a)):
     a[previous_index + 1] = current_object
 print(a)
 # [-100, -10, 0, 1, 50]
+
+
+# same thing but more pythonic
+
+a = [0, 1, -10, 50, -100]
+
+for i in range(1,len(a)-1):
+  j = i
+  while j > 0 and a[j-1] > a[j]:
+    a[j], a[j-1] = a[j-1], a[j]
+    j -= 1
+
+print(a)
+# [-10, 0, 1, 50, -100]
