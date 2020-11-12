@@ -16,6 +16,8 @@ print(a)
 # [-1, 1, 1, 100]
 
 
+# same example with more informative variables
+
 a = [0, 1, -10, 50, -100]
 
 for x in range(1, len(a)):
